@@ -52,11 +52,15 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Tarot theme colors
+        // Tarot theme colors - ispirato al tarocco "LO STRULLO"
         tarot: {
-          dark: "#0a0a0a",
-          gold: "#d4af37",
-          cream: "#f5f5dc",
+          dark: "#1a1410",        // Nero caldo con tocco marrone
+          gold: "#d4a959",        // Giallo dorato del tarocco
+          cream: "#f4eed8",       // Crema chiaro
+          red: "#8b3a3a",         // Rosso profondo/borgogna
+          green: "#5a6d5a",       // Verde scuro erboso
+          yellow: "#e8c66f",      // Giallo caldo dello sfondo
+          brown: "#8b6f47",       // Marrone/ocra
         },
       },
       borderRadius: {

@@ -20,15 +20,29 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-tarot-gold/20 bg-tarot-dark/95 backdrop-blur supports-[backdrop-filter]:bg-tarot-dark/80">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        {/* Logo - SOSTITUIRE CON VOSTRO LOGO */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="w-12 h-12 bg-tarot-gold/20 border-2 border-tarot-gold rounded-sm flex items-center justify-center">
-            {/* TODO: Inserire logo qui */}
-            <span className="text-tarot-gold font-serif text-xl font-bold">S</span>
+        {/* Logo STRULLO */}
+        <Link href="/" className="flex items-center space-x-3">
+          {/* Logo immagine - stile disegnato a mano */}
+          <div className="relative h-10 w-32 md:w-40">
+            <img 
+              src="/logo-strullo.png" 
+              alt="STRULLO" 
+              className="h-full w-full object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+              onError={(e) => {
+                // Fallback se l'immagine non è ancora stata caricata
+                e.currentTarget.style.display = 'none';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'block';
+              }}
+            />
+            {/* Fallback text logo con stile disegnato */}
+            <span 
+              className="hidden font-serif text-3xl font-bold text-tarot-gold tracking-wide"
+              style={{ fontWeight: 900, letterSpacing: '0.05em' }}
+            >
+              Strullo
+            </span>
           </div>
-          <span className="hidden md:block font-serif text-2xl font-bold text-tarot-gold">
-            STRULLO
-          </span>
         </Link>
 
         {/* Desktop Navigation */}

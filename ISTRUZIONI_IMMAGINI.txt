@@ -1,0 +1,125 @@
+═══════════════════════════════════════════════════════════════════
+  📸 ISTRUZIONI: COME SALVARE LE IMMAGINI NEL SITO STRULLO
+═══════════════════════════════════════════════════════════════════
+
+Ho visto le tue bellissime immagini! Ora devi salvarle nella cartella
+public/ del progetto. Ecco ESATTAMENTE cosa fare:
+
+───────────────────────────────────────────────────────────────────
+  STEP 1: SALVA IL LOGO
+───────────────────────────────────────────────────────────────────
+
+1. Trova l'immagine con la scritta "Strullo" (quella bianca su nero 
+   oppure blu su nero)
+   
+2. Salvala come:
+   📁 /Users/cocco/Desktop/sito-strullo/public/logo-strullo.png
+   
+3. Formato: PNG (con sfondo trasparente se possibile)
+
+───────────────────────────────────────────────────────────────────
+  STEP 2: SALVA IL TAROCCO PRINCIPALE
+───────────────────────────────────────────────────────────────────
+
+1. Trova l'illustrazione del tarocco con:
+   - Il personaggio (giovane con tunica rossa)
+   - Il gallo sul bastone
+   - Il numero "0" in alto
+   - La scritta "LO STRULLO" in basso
+   
+2. Salvala come:
+   📁 /Users/cocco/Desktop/sito-strullo/public/tarot-lo-strullo.jpg
+   
+3. Formato: JPG o PNG
+
+───────────────────────────────────────────────────────────────────
+  STEP 3: SALVA LE TRE TESTE STILIZZATE
+───────────────────────────────────────────────────────────────────
+
+Hai 3 illustrazioni di teste maschili in bianco e nero con baffi.
+
+Salva ciascuna come:
+   📁 /Users/cocco/Desktop/sito-strullo/public/illustrations/head-1.png
+   📁 /Users/cocco/Desktop/sito-strullo/public/illustrations/head-2.png
+   📁 /Users/cocco/Desktop/sito-strullo/public/illustrations/head-3.png
+
+Formato: PNG (con sfondo trasparente se possibile)
+
+───────────────────────────────────────────────────────────────────
+  STEP 4: SALVA LA COLLEZIONE DI TAROCCHI (Opzionale ma consigliato)
+───────────────────────────────────────────────────────────────────
+
+Se hai un'immagine che mostra più carte dei tarocchi insieme:
+
+Salvala come:
+   📁 /Users/cocco/Desktop/sito-strullo/public/tarot-collection.jpg
+
+Formato: JPG
+
+═══════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST RAPIDA
+═══════════════════════════════════════════════════════════════════
+
+Alla fine dovresti avere questi file:
+
+public/
+  ├── logo-strullo.png         ✓ Logo bianco o blu
+  ├── tarot-lo-strullo.jpg     ✓ Tarocco completo numero 0
+  ├── tarot-collection.jpg     ✓ Collezione tarocchi (opzionale)
+  └── illustrations/
+      ├── head-1.png           ✓ Prima testa
+      ├── head-2.png           ✓ Seconda testa
+      └── head-3.png           ✓ Terza testa
+
+═══════════════════════════════════════════════════════════════════
+  🚀 DOPO AVER SALVATO LE IMMAGINI
+═══════════════════════════════════════════════════════════════════
+
+1. Se il server è già avviato (npm run dev), fai semplicemente 
+   refresh nel browser (Command + R)
+
+2. Se non è avviato:
+   cd /Users/cocco/Desktop/sito-strullo
+   npm run dev
+
+3. Vai su http://localhost:3000
+
+4. Dovresti vedere:
+   - Il logo nell'header
+   - Il tarocco come sfondo della homepage
+   - Le teste stilizzate nelle card "Eventi, Community, Arte"
+
+═══════════════════════════════════════════════════════════════════
+  💡 NOTE IMPORTANTI
+═══════════════════════════════════════════════════════════════════
+
+✓ I nomi dei file DEVONO essere esattamente quelli indicati
+✓ Usa le minuscole e i trattini (-)
+✓ Non usare spazi nei nomi dei file
+✓ Se un'immagine non si vede, controlla il nome del file
+✓ Il sito ha già dei fallback se le immagini non ci sono
+
+═══════════════════════════════════════════════════════════════════
+  🎨 STILE AGGIORNATO
+═══════════════════════════════════════════════════════════════════
+
+Ho già aggiornato tutto il sito con i colori del tarocco:
+- Sfondo: Nero caldo (#1a1410)
+- Oro: Giallo dorato (#d4a959)
+- Giallo: Giallo caldo (#e8c66f)
+- Crema: Crema chiaro (#f4eed8)
+- Rosso: Rosso profondo (#8b3a3a)
+- Verde: Verde erboso (#5a6d5a)
+- Marrone: Marrone/ocra (#8b6f47)
+
+E ho aggiunto:
+✓ Bordi decorativi stile tarocco
+✓ Texture carta antica
+✓ Linee decorative con simboli
+✓ Scrollbar personalizzata
+✓ Effetti hover medievali
+
+═══════════════════════════════════════════════════════════════════
+
+Se hai problemi, fammi sapere! 🎴✨
+

@@ -66,13 +66,26 @@ export default function ChiSiamoPage() {
             </div>
           </section>
 
-          {/* Section 4 - Placeholder Image */}
+          {/* Section 4 - Immagine Collezione Tarocchi */}
           <section className="mt-12">
-            <div className="aspect-video bg-tarot-gold/10 border-2 border-tarot-gold/30 rounded-lg flex items-center justify-center">
-              {/* TODO: INSERIRE FOTO DEL TEAM O EVENTO */}
-              <p className="text-tarot-gold/50 font-serif text-xl">
-                [Immagine del team o evento]
-              </p>
+            <div className="aspect-video bg-tarot-dark/60 border-3 border-tarot-gold/40 rounded-sm overflow-hidden relative tarot-border">
+              <img 
+                src="/tarot-collection.jpg" 
+                alt="Collezione Tarocchi STRULLO" 
+                className="w-full h-full object-cover opacity-80"
+                onError={(e) => {
+                  // Fallback se l'immagine non è caricata
+                  const target = e.currentTarget as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = target.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+              <div className="hidden w-full h-full flex-col items-center justify-center bg-tarot-gold/10">
+                <p className="text-tarot-gold/50 font-serif text-xl text-center px-4">
+                  Il mondo dei tarocchi STRULLO
+                </p>
+              </div>
             </div>
           </section>
 
