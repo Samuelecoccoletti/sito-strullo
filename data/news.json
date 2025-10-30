@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Inaugurazione Nuova Sede",
+    "excerpt": "Siamo felici di annunciare l'apertura della nuova sede STRULLO nel cuore della città. Uno spazio dedicato all'arte e alla cultura.",
+    "date": "2025-01-15",
+    "content": "La nuova sede offrirà spazi per workshop, esposizioni e incontri culturali. Vi aspettiamo per l'inaugurazione!"
+  },
+  {
+    "id": 2,
+    "title": "Workshop: Introduzione ai Tarocchi",
+    "excerpt": "Un viaggio nel mondo dei tarocchi attraverso storia, simbolismo e pratica. Adatto a principianti e curiosi.",
+    "date": "2025-01-20",
+    "content": "Il workshop si terrà ogni sabato per quattro settimane. Posti limitati, prenotazione obbligatoria."
+  },
+  {
+    "id": 3,
+    "title": "Mostra Collettiva: Archetipi Contemporanei",
+    "excerpt": "Una selezione di opere che esplorano gli archetipi junghiani attraverso linguaggi artistici moderni.",
+    "date": "2025-02-01",
+    "content": "La mostra sarà visitabile dal 1 al 28 febbraio. Ingresso libero per i soci."
+  },
+  {
+    "id": 4,
+    "title": "Presentazione Libro: Simboli e Spiritualità",
+    "excerpt": "Incontro con l'autore per discutere del ruolo dei simboli nella ricerca spirituale contemporanea.",
+    "date": "2025-02-10",
+    "content": "Evento gratuito con aperitivo di benvenuto. Prenotazione consigliata."
+  },
+  {
+    "id": 5,
+    "title": "Rituale del Solstizio",
+    "excerpt": "Celebrazione comunitaria del solstizio d'estate con musica, performance e meditazione collettiva.",
+    "date": "2025-06-21",
+    "content": "Un'esperienza unica per connettersi con i cicli naturali e la comunità."
+  }
+]
+

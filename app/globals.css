@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-tarot-dark text-tarot-cream font-sans;
+    /* Texture carta antica */
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"),
+      radial-gradient(circle at 20% 50%, rgba(232, 198, 111, 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(212, 169, 89, 0.06) 0%, transparent 50%);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1410;
+  border-left: 2px solid #d4a959;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a959;
+  border: 2px solid #1a1410;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e8c66f;
+}
+
+/* Tarot card effect - stile medievale */
+.tarot-card-hover {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tarot-card-hover::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border: 3px solid transparent;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tarot-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(212, 169, 89, 0.4);
+}
+
+.tarot-card-hover:hover::before {
+  opacity: 1;
+  border-color: #d4a959;
+}
+
+/* Hero gradient overlay - stile tarocco */
+.hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 20, 16, 0.75) 0%,
+    rgba(26, 20, 16, 0.95) 100%
+  );
+}
+
+/* Bordo decorativo stile tarocco */
+.tarot-border {
+  border: 3px solid #d4a959;
+  position: relative;
+  padding: 2px;
+}
+
+.tarot-border::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid #d4a959;
+  pointer-events: none;
+}
+
+/* Texture carta antica */
+.paper-texture {
+  position: relative;
+  background-color: #f4eed8;
+}
+
+.paper-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' /%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Linee decorative */
+.decorative-line {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d4a959, transparent);
+  position: relative;
+}
+
+.decorative-line::before,
+.decorative-line::after {
+  content: '✦';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d4a959;
+  font-size: 1rem;
+}
+
+.decorative-line::before {
+  left: 10%;
+}
+
+.decorative-line::after {
+  right: 10%;
+}
+
