@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 "use client"
 
+=======
+>>>>>>> 6265e559eb01950f09674cb85be871a703118f2e
 export default function ChiSiamoPage() {
   return (
     <div className="container mx-auto px-4 py-20">

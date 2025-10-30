@@ -29,9 +29,16 @@ export function Header() {
               alt="STRULLO" 
               className="h-full w-full object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               onError={(e) => {
+<<<<<<< HEAD
                 // Fallback: usa logo SVG se PNG non è disponibile
                 e.currentTarget.src = '/logo-placeholder.svg';
                 e.currentTarget.className = 'h-full w-full object-contain opacity-90 hover:opacity-100 transition-opacity';
+=======
+                // Fallback se l'immagine non è ancora stata caricata
+                e.currentTarget.style.display = 'none';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'block';
+>>>>>>> 6265e559eb01950f09674cb85be871a703118f2e
               }}
             />
             {/* Fallback text logo con stile disegnato */}

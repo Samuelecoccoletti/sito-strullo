@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 "use client"
 
+=======
+>>>>>>> 6265e559eb01950f09674cb85be871a703118f2e
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
